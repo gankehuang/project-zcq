@@ -1,0 +1,86 @@
+@import '~iview/src/styles/index.less';
+
+@primary-color: #0F75BB;
+@title-color: #026eb8;
+@link-color: @primary-color;
+@text-color: #2c3e50;
+@text-light-color: #999;
+@division-color: #999999;
+@title-bg: #e6e7e9;
+@title-bg-dark: #b7b8ba;
+
+/*@table-td-hover-bg: #eef7dc;*/
+
+/*@btn-font-weight: bold;*/
+
+html, body{
+	position: relative;
+  height: 100%;
+  min-height: 100%;
+  font-size: @font-size-base;
+  padding:0;
+}
+
+a{
+	color: @primary-color;
+
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+ul{
+	list-style: none;
+}
+
+/*.show{
+	display: block;
+}
+
+.hide{
+	display: none;
+}*/
+
+.bold{
+	&, & *{
+		font-weight: bold;
+	}
+}
+
+.text-nowrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clearfix{
+  zoom:1;
+}
+
+.clearfix:after{
+  content:"";
+  height:0;
+  line-height:0;
+  display:block;
+  visibility:hidden;
+  clear:both
+}
+
+/*有效宽度*/
+.container-main{
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.title-img{
+	display: none;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+.ivu-card-head{
+	border-bottom: 1px dashed @border-color-base;
+}
+
+
